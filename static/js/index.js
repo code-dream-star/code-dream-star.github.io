@@ -183,24 +183,22 @@ $(".app-paragraph-content-table-div[url]").each((_, a) => {
             const urlobject = new URL(`${location.href}`);
             urlobject.href = a.getAttribute("url")
             console.log(urlobject)
-            if (urlobject.host == location.host) {
-                const lb = createloadborder();
-                const f = fetch(urlobject.href)
-                f.then(() => {
-                    lb.off();
-                    history.pushState({}, "", a.getAttribute("url"));
-                });
-                f.catch(() => {
-                    history.pushState({}, "", a.getAttribute("url"));
-                    ($("#app").html(`<div 404errornotpagediv><div class="app-paragraph">
+            const lb = createloadborder();
+            const f = fetch(urlobject.href)
+            f.then(() => {
+                lb.off();
+                history.pushState({}, "", a.getAttribute("url"));
+            });
+            f.catch(() => {
+                history.pushState({}, "", a.getAttribute("url"));
+                ($("#app").html(`<div 404errornotpagediv><div class="app-paragraph">
                     <div class="app-paragraph-title">
                         <h2>OMG！504 - Error Occurred！</h2>
                     </div>
                     <div class="app-paragraph-content"><div class="app-paragraph-content-textdark"></div></div>
                     <p><a href="" class="app-blue-button"><span>重新加载</span></a></p>
                 </div></div>`))
-                })
-            }
+            })
         } else if (a.getAttribute("target") == "thisotherpage") {
             location.href = a.getAttribute("url");
         } else {
