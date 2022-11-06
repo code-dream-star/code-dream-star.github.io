@@ -55,7 +55,7 @@ function loadPR(username) {
             v: [],
             d: "",
             errormsg: "用户不存在！"
-        };// 把上面的删了就不会显示了
+        };
     $(`<div class="app-user-detailed" username="${username}" ><div class="app-user-detailed-banner"><div class="app-user-detailed-container"><div class="app-user-detailed-container-left"><div class="app-user-detailed-container-left-headimg"><img src="${s.img}" class="app-user-detailed-container-left-headimg-imgroot" draggable="false"></div><div class="app-user-detailed-container-left-config"><div class="app-user-detailed-container-left-config-top"><span class="app-user-detailed-container-left-config-top-name">${s.name}</span>${s.v.map((a) => { return `<v class="app-user-detailed-container-left-config-top-tag">${a}</v>` }).join("")}</div><div class="app-user-detailed-container-left-config-d"><p class="app-user-detailed-container-left-config-d-p">${s.d}</p></div></div></div></div></div></div><div class="app-paragraph"><div class="app-paragraph-title"><h2>用户传送门</h2></div>${!s.errormsg ? `<a href="https://github.com/${username}" target="_blank" class="app-blue-button"><span>Github</span></a>${(s.codemaoid ? `<a href="https://shequ.codemao.cn/user/${s.codemaoid}" target="_blank" class="app-blue-button"><span>编程猫</span></a>` : "")}${s.box3id ? `<a href="https://box3.codemao.cn/u/${s.box3id}" target="_blank" class="app-blue-button"><span>Box3</span></a>` : ""}` : `<div class="app-paragraph-content-textdark">该用户好像还没有设置传送门呢</div><script>setTimeout(()=>{alert("用户不存在")},200)</script>`}</div></div>`)
         .appendTo($("#app > div:not([class])[peopleread]")[0])
 }
@@ -88,7 +88,6 @@ function createloadborder() {
 }
 
 function loadpage() {
-    const lb = createloadborder();
     $(".app-header-right-navigate-div").each((_, a) => {
         a.classList.remove("app-header-right-navigate-div-active");
     });
@@ -136,9 +135,6 @@ function loadpage() {
             $(".app-boards").css("display", "none")
         }
     } catch (e) { }
-    setTimeout(() => {
-        lb.off();
-    }, 300)
     if (sw == 0) {
         ($("#app").html(`<div 404errornotpagediv><div class="app-paragraph">
         <div class="app-paragraph-title">
