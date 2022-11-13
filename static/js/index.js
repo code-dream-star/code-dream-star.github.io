@@ -160,7 +160,6 @@ window.boardsnow = 0;
 
 window.addEventListener("load", () => {
     loadpage();
-    console.log("loaded!");
 })
 
 if (typeof window.$boardsdata != [][0] + []) {
@@ -169,6 +168,23 @@ if (typeof window.$boardsdata != [][0] + []) {
             $(`<div class="app-boards-root-img"><img src="${e.img}" url="${e.url}"></div>`).appendTo($(".app-boards-root")[0])
             $(`<div class="app-boards-bottom-buttons-div"></div>`).appendTo($(".app-boards-bottom-buttons")[0])
         });
+    }
+}
+
+if (typeof window.$about_development_history_data != [][0] + []) {
+    if (Array.isArray(window.$about_development_history_data)) {
+        $(`<li></li>`).appendTo($(".about-development-history-select>ul")[0])
+        window.$about_development_history_data.forEach((e) => {
+            $(`<li class="about-development-history-text-div" date="${e.date}">
+            <div class="about-development-history-div-date"><span>${e.date}</span></div>
+            <div class="about-development-history-div-content">${e.data.map((v) => { return `<div class="about-development-history-div-content-div"><span>${v}</span></div>` }).join("")}</div>
+            </li>`).appendTo($(".about-development-history .app-paragraph-content .text")[0]);
+            $(`<li class="point"></li>`).appendTo($(".about-development-history .app-paragraph-content .axis")[0])
+            for (let i in "0".repeat(e.data.length)) {
+                $(`<li></li>`).appendTo($(".about-development-history .app-paragraph-content .axis")[0])
+            }
+        });
+        $(`<li></li>`).appendTo($(".about-development-history-select>ul")[0])
     }
 }
 
@@ -347,3 +363,13 @@ $(`#app`).each((_, a) => {
     }, 100)
 });
 
+
+window.addEventListener("load", () => {
+    loadpage();
+    console.log("loaded!");
+    $("#loading").css("display", "none")
+})
+
+$(".environmental-monitoring-start")[0].addEventListener("click", function () {
+    alert("未开发")
+})

@@ -490,6 +490,92 @@ img {
     -moz-user-select: none;
 }
 
+.app-paragraph.about-image {
+    background: url(../img/boards/company_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-works-table-div-d {
+    text-align: left;
+}
+
+.about-development-history .app-paragraph-content {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-paragraph-content .axis {
+    width: 20px;
+    margin-right: 50px;
+    border-radius: 500px;
+    border: solid 2px #0af;
+    border-top: solid 0px #0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-paragraph-content .axis li.point {
+    background-color: #0af;
+    /*background: url(../img/icon/logo.png) no-repeat;*/
+    background-size: 100% 100%;
+    border-radius: 50%;
+    /*transform: scale(1.75);*/
+}
+
+.app-paragraph-content .axis li {
+    width: 40px;
+    height: 40px;
+}
+
+.app-paragraph-content .text {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+li.about-development-history-text-div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.about-development-history .app-paragraph-title {
+    margin-bottom: 40px;
+}
+
+.app-paragraph-content .text li:first-child .about-development-history-div-date {
+    margin-right: 40px;
+}
+
+.about-development-history-div-date {
+    margin-right: 70px;
+    font-weight: bold;
+}
+
+.about-development-history-div-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-image .app-paragraph-content {
+    line-height: 30px;
+}
+
+::selection {
+    background: #0af;
+    color: #fff;
+}
+
 @media (max-width: 1000px) {
     footer.app-footer {
         font-size: 14px;
@@ -589,6 +675,48 @@ img {
 
     .app-footer-p-content div {
         margin: 0px 0px 3px 0px;
+    }
+
+    .app-paragraph-content .axis {
+        width: 10px;
+    }
+
+    .app-paragraph-content .text li:first-child .about-development-history-div-date {
+        margin-right: 50px;
+    }
+
+    .app-paragraph-content .axis li {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*.app-paragraph-content .axis li.point {
+        transform: scale(1.5);
+    }*/
+
+    .app-paragraph-content .text {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    li.about-development-history-text-div {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .app-paragraph-content .text li:first-child .about-development-history-div-date {
+        margin-right: 20px;
+    }
+
+    .about-development-history-div-date {
+        margin-right: 40px;
+        font-weight: bold;
+    }
+
+    .app-paragraph-content .axis {
+        margin-right: 25px;
     }
 }
 
