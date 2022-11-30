@@ -13,7 +13,7 @@
             })
             .includes(JSON.stringify([date.getMonth() + 1, date.getDate()]))
     ) {
-        document.querySelector("body").style.filter = "grayscale(100%)";
+        document.querySelector("html").style.filter = "grayscale(1)";
     }
 })();
 
