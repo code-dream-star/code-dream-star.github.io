@@ -1,3 +1,22 @@
+!(function () {
+    const date = new Date();
+    const list = [
+        [12, 13],
+        [2, 21],
+        [3, 21],
+        [11,30]
+    ];
+    if (
+        list
+            .map((a) => {
+                return JSON.stringify(a);
+            })
+            .includes(JSON.stringify([date.getMonth() + 1, date.getDate()]))
+    ) {
+        document.querySelector("body").style.filter = "grayscale(100%)";
+    }
+})();
+
 $(".app-header-right-navigate-div").each((_, a) => {
     a.addEventListener("click", function () {
         const lb = createloadborder();
