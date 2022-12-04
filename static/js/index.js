@@ -1,3 +1,4 @@
+window.BoardsStop = true
 document.querySelector("html").style.filter = "grayscale(1)";
 !(function () {
     const date = new Date();
@@ -249,6 +250,10 @@ $(`.app-boards-root`).each((_, a) => {
         $(a).width($(window).width());
     })
     setInterval(() => {
+        if (window.BoardsStop) {
+            xasfw = 0;
+            return
+        }
         if (a.className.split(" ").includes("mouseenter")) {
             xasfw = 0;
             return
@@ -315,6 +320,7 @@ $(`.app-boards-root`).each((_, a) => {
         a.classList.remove("mouseenter");
     });
     a.addEventListener("mousedown", function (e) {
+        if(window.BoardsStop)return
         ct = Date.now();
         const { offsetX } = e;
         now = window.boardsnow;
