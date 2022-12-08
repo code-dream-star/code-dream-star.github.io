@@ -1,5 +1,4 @@
-window.BoardsStop = true
-document.querySelector("html").style.filter = "grayscale(1)";
+window.BoardsStop = false
 !(function () {
     const date = new Date();
     const list = [
