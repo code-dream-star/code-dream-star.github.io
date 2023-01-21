@@ -419,7 +419,8 @@ a.app-footer-p-title {
 }
 
 .app-header-border {
-    background: #0af;
+    /*background: #0af;*/
+    background: #f55;
     height: 5px;
     position: fixed;
     top: 0;
@@ -587,7 +588,8 @@ li.about-development-history-text-div {
 }
 
 ::selection {
-    background: #0af;
+    /*background: #0af;*/
+    /*background: #f55;*/
     color: #fff;
 }
 
