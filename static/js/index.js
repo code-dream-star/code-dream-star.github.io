@@ -1,4 +1,4 @@
-window.BoardsStop = false
+window.BoardsStop = true
 !(function () {
     const date = new Date();
     const list = [
