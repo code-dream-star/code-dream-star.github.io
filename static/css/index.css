@@ -589,7 +589,7 @@ li.about-development-history-text-div {
 
 ::selection {
     /*background: #0af;*/
-    /*background: #f55;*/
+    background: #f55;
     color: #fff;
 }
 
