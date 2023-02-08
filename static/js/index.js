@@ -1,4 +1,4 @@
-window.BoardsStop = true
+window.BoardsStop = false
 !(function () {
     const date = new Date();
     const list = [
@@ -46,24 +46,27 @@ $(".app-header-right-navigate-div").each((_, a) => {
 function loadPR(username) {
     const config = {
         "1086-loves-programming": {
-            img: "./static/img/headimg/1086.png",
+            img: "https://q1.qlogo.cn/g?b=qq&nk=531854969&s=640",
             name: "1086爱编程",
             v: ["队长", "核心开发员"],
             d: "https://1086tech.github.io/",
+            qq: "531854969",
             codemaoid: "13869990",
         },
         "xiaohong2022": {
-            img: "./static/img/headimg/小宏.png",
+            img: "https://q1.qlogo.cn/g?b=qq&nk=3174251894&s=640",
             name: "小宏XeLa",
             v: ["核心开发员"],
             d: "az",
+            qq: "3174251894",
             codemaoid: "9232151",
         },
         "123213123123": {
-            img: "./static/img/headimg/木水屑.png",
+            img: "https://q1.qlogo.cn/g?b=qq&nk=1743282840&s=640",
             name: "木水屑",
             v: ["积木制作", "核心开发员"],
             d: "- 暂无简介 -",
+            qq: "1743282840"
         },
     }
     const s =
