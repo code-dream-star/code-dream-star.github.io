@@ -35,7 +35,7 @@ const NavigatorTools = {
                 isBaidu: u.indexOf('Baidu') > -1 || u.indexOf('BIDUBrowser') > -1, // 是 百度 浏览器
                 is360: u.indexOf('360EE') > -1 || u.indexOf('360SE') > -1, // 是 360 浏览器
                 is2345: u.indexOf('2345Explorer') > -1, // 是 2345 浏览器
-                isEdge: u.indexOf('Edge') > -1, // 是 Edge 浏览器
+                isEdge: u.indexOf('Edge') > -1 || u.indexOf('Edg') > -1, // 是 Edge 浏览器
                 isFirefox: u.indexOf('Firefox') > -1, // 是 火狐 浏览器
                 isSafari: u.indexOf('Safari') > -1 && u.indexOf('Chrome') === -1, // 是 苹果 浏览器
                 isQQBrowser: u.indexOf('MQQBrowser') > -1 && u.indexOf(' QQ') === -1, // 是 腾讯（QQ）浏览器

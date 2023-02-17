@@ -1,0 +1,23 @@
+:root {
+    --app-bg-color: rgb(246, 246, 246);
+    --app-theme-color: #f00;
+    --app-theme-color2: #a00;
+    --header-url-select-color: #dacd19;
+    --header-bg-color: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    --header-text-color: #fff;
+    --header-bg-fixed-color: #fff;
+    --header-text-fixed-color: #000;
+    --paragraph-border-color: #eaeaea;
+    --paragraph-content-color: #000;
+    --paragraph-darkcontent-color: #888;
+    --app-url-color: var(--app-theme-color);
+    --app-url-color-hover: #900;
+    --blue-button-bg-color: var(--app-theme-color2);
+    --blue-button-text-color: #fff;
+    --fooler-border-color: #eaeaea;
+    --axis-color: var(--app-theme-color);
+    --axis-point-color: var(--app-theme-color);
+    --selection-bg-color: var(--app-theme-color);
+    --selection-text-color: #fff;
+    --header-border-color: var(--app-theme-color);
+}
