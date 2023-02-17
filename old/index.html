@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/css/index_old.css">
+    <title>Code Dream Star</title>
+</head>
+
+<body>
+    <noscript>
+        <style>
+            #app {
+                display: none;
+            }
+
+            body {
+                margin: 8px
+            }
+
+            #loading {
+                display: none !important;
+            }
+        </style>
+        <b>Please start JavaScript to run this website.</b>
+    </noscript>
+    <div id="loading">
+        <style>
+            #loading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                align-content: center;
+                position: fixed;
+                background-color: #fff;
+                color: rgb(0, 132, 255);
+                font-size: 2em;
+                width: 100%;
+                height: 100%;
+                z-index: 99999999999999999999999999999999999999999999999999999999999;
+            }
+        </style>
+        <b>Loading...</b>
+    </div>
+    <div id="app">
+        <header class="app-header">
+            <div class="app-header-spacer"></div>
+            <a class="app-header-left-img" href="?" alt="Code Dream Star">
+                <text>Code Dream Star</text>
+            </a>
+            <div class="app-header-spacer"></div>
+            <div class="app-header-right-navigate">
+                <div class="app-header-right-navigate-div" url="?">首页</div>
+                <div class="app-header-right-navigate-div" url="?page=peoples">成员</div>
+                <div class="app-header-right-navigate-div" url="?page=works">项目</div>
+            </div>
+            <div class="app-header-spacer"></div>
+        </header>
+        <div class="app-boards">
+            <div class="app-boards-root"></div>
+            <div class="app-boards-bottom-buttons"></div>
+        </div>
+        <div home>
+            <div class="app-paragraph about-image">
+                <div class="app-paragraph-title">
+                    <h2>你好，欢迎来到Code Dream Star~</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <div class="app-paragraph-content-textdark">
+                        <p>Code Dream Star成立于2022年7月29日。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="app-paragraph about-development-history">
+                <div class="app-paragraph-title">
+                    <h2>发展历程</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <ul class="axis"></ul>
+                    <ul class="text"></ul>
+                    <script>
+                        window.$about_development_history_data = [
+                            { date: "2022.07.29", data: ["团队成立", "创建Code Dream Star"] },
+                            { date: "2022.10", data: ["Code Blockly项目开始制作"] },
+                            { date: "2022.11", data: ["Code Dream Star 被更多人熟知", "Code Blockly 上线，目前仅支持 HTML", "Code Dream Star 官网上线"] },
+                            { date: "2023", data: ["未来可期..."] },
+                        ]
+                    </script>
+                </div>
+            </div>
+            <div class="app-paragraph">
+                <div class="app-paragraph-title">
+                    <h2>核心成员</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <div class="app-paragraph-content-table">
+                        <div class="app-paragraph-content-table-div" url="?page=peopleread&name=1086-loves-programming"
+                            target="this">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="https://q1.qlogo.cn/g?b=qq&nk=531854969&s=640"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <span>1086爱编程</span>
+                            </div>
+                        </div>
+                        <div class="app-paragraph-content-table-div" url="?page=peopleread&name=xiaohong2022"
+                            target="this">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="https://q1.qlogo.cn/g?b=qq&nk=3174251894&s=640"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <span>小宏XeLa</span>
+                            </div>
+                        </div>
+                        <div class="app-paragraph-content-table-div" url="?page=peopleread&name=123213123123"
+                            target="this">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="https://q1.qlogo.cn/g?b=qq&nk=1743282840&s=640"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <span>木水屑</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <a href="?page=peoples" class="app-blue-button"><span>查看更多</span></a>
+                </p>
+            </div>
+            <div class="app-paragraph">
+                <div class="app-paragraph-title">
+                    <h2>我们在哪里</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <div class="app-paragraph-content-table">
+                        <div class="app-paragraph-content-table-div" url="https://github.com/code-dream-star">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="../static/img/icon/Github.svg"
+                                    class="app-paragraph-content-table-div-icon-img" height="40" winth="40"
+                                    style="height:40px">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <span>Github 组织</span>
+                            </div>
+                        </div>
+                        <div class="app-paragraph-content-table-div" url="https://jq.qq.com/?_wv=1027&k=8re37Nfl">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="../static/img/icon/QQ.png" class="app-paragraph-content-table-div-icon-img"
+                                    height="40" winth="40" style="height:40px">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <span>QQ群</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div peoples>
+            <div class="app-paragraph">
+                <div class="app-paragraph-title">
+                    <h2>团队成员</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <div class="app-paragraph-content-table page-works-table">
+                        <div class="app-paragraph-content-table-div" url="?page=peopleread&name=1086-loves-programming"
+                            target="this">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="https://q1.qlogo.cn/g?b=qq&nk=531854969&s=640"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="page-works-table-div-right-div">
+                                <div class="app-paragraph-content-table-div-text">
+                                    <span>1086爱编程</span>
+                                    <v>队长</v>
+                                    <v>核心开发员</v>
+                                </div>
+                                <div class="page-works-table-div-d">
+                                    <span>hi</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-paragraph-content-table-div" url="?page=peopleread&name=xiaohong2022"
+                            target="this">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="https://q1.qlogo.cn/g?b=qq&nk=3174251894&s=640"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="page-works-table-div-right-div">
+                                <div class="app-paragraph-content-table-div-text">
+                                    <span>小宏XeLa</span>
+                                    <v>核心开发员</v>
+                                </div>
+                                <div class="page-works-table-div-d">
+                                    <span>az</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-paragraph-content-table-div" url="?page=peopleread&name=123213123123"
+                            target="this">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="https://q1.qlogo.cn/g?b=qq&nk=1743282840&s=640"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="page-works-table-div-right-div">
+                                <div class="app-paragraph-content-table-div-text">
+                                    <span>木水屑</span>
+                                    <v>核心开发员</v>
+                                </div>
+                                <div class="page-works-table-div-d">
+                                    <span>- 暂无描述 -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <a href="https://github.com/orgs/code-dream-star/people" target="_blank"
+                        class="app-blue-button"><span>在Github上查看</span></a>
+                </p>
+            </div>
+        </div>
+        <div works>
+            <div class="app-paragraph">
+                <div class="app-paragraph-title">
+                    <h2>所有项目</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <div class="app-paragraph-content-table page-works-table">
+                        <div class="app-paragraph-content-table-div" url="../code-blockly?from=code-dream-star-home">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="../static/img/icon/code-blockly/code-blockly.png"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="page-works-table-div-right-div">
+                                <div class="app-paragraph-content-table-div-text">
+                                    <span>Code-Blockly</span>
+                                </div>
+                                <div class="page-works-table-div-d">
+                                    <span>Code Blockly基于开源的谷歌的Blockly开发，其含有多种语言的图形化界面非常利于新手快速上手编程，体验编程的乐趣。</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <a href="https://github.com/orgs/code-dream-star/repositories" target="_blank"
+                        class="app-blue-button"><span>在Github上查看</span></a>
+                </p>
+            </div>
+        </div>
+        <div peopleread></div>
+        <div monitor>
+            <div class="app-paragraph environmental-monitoring">
+                <div class="app-paragraph-title">
+                    <h2>环境监测</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <div class="app-paragraph-content-textdark">
+                        <p>检测结果：</p>
+                    </div>
+                    <div class="app-paragraph-content-table">
+                        <div class="app-paragraph-content-table-div">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="../static/img/icon/monitor/icon_network.svg"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <b>网速：</b>
+                                <span>未检测</span>
+                            </div>
+                        </div>
+                        <div class="app-paragraph-content-table-div">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="../static/img/icon/monitor/icon_browser.svg"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <b>浏览器：</b>
+                                <span>未检测</span>
+                            </div>
+                        </div>
+                        <div class="app-paragraph-content-table-div">
+                            <div class="app-paragraph-content-table-div-icon">
+                                <img src="../static/img/icon/monitor/icon_system.svg"
+                                    class="app-paragraph-content-table-div-icon-img">
+                            </div>
+                            <div class="app-paragraph-content-table-div-text">
+                                <b>系统：</b>
+                                <span>未检测</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <a class="app-blue-button environmental-monitoring-start"><span>开始检测</span></a>
+                </p>
+            </div>
+        </div>
+        <div contact>
+            <div class="app-paragraph">
+                <div class="app-paragraph-title">
+                    <h2>联系我们</h2>
+                </div>
+                <div class="app-paragraph-content">
+                    <div class="app-paragraph-content-textdark">
+                        <br>
+                        <a href="mailto:quiet_star_gazing@outlook.com">静静地看星空：quiet_star_gazing@outlook.com</a><br><br>
+                        <a href="mailto:3174251894@qq.com">小宏XeLa：3174251894@qq.com</a>
+                        <a href="https://jq.qq.com/?_wv=1027&k=oi20RDFS">QQ群：674955247</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>window.$boardsdata = [
+                { img: "../static/img/boards/Code-Dream-Star-Line.png", url: "?" },
+                { img: "../static/img/boards/Code-Dream-Star.png", url: "?" },
+                { img: "../static/img/boards/Code-Blockly.png", url: "../code-blockly" },
+            ]</script>
+        <footer class="app-footer">
+            <div class="app-footer-spacer"></div>
+            <div class="app-footer-left">
+                <div class="app-footer-p">
+                    <a class="app-footer-p-title">网站搭建成员</a>
+                    <div class="app-footer-p-content">
+                        <div>
+                            <a>设计&代码：小宏XeLa</a>
+                        </div>
+                        <div>
+                            <a>海报设计：1086爱编程 & 小宏XeLa</a>>
+                        </div>
+                        <div>
+                            <a>信息填写：1086爱编程 & 小宏XeLa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-footer-p">
+                    <a class="app-footer-p-title">关于我们</a>
+                    <div class="app-footer-p-content">
+                        <div>
+                            <a class="app-url" href="?">团队介绍</a>
+                        </div>
+                        <div>
+                            <a class="app-url" href="?page=contact">联系我们</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-footer-p">
+                    <a class="app-footer-p-title">其他服务</a>
+                    <div class="app-footer-p-content">
+                        <a class="app-url" href="?page=monitor">环境监测</a>
+                    </div>
+                </div>
+            </div>
+            <div class="app-footer-right">
+                <div class="app-footer-p deliver-door-footer">
+                    <a class="deliver-door-footer-div" href="https://github.com/code-dream-star" target="_blank">
+                        <img src="../static/img/icon/Github.svg" class="app-paragraph-content-table-div-icon-img"
+                            height="40" winth="40" style="height:40px">
+                    </a>
+                    <a class="deliver-door-footer-div" href="https://jq.qq.com/?_wv=1027&k=ojnNZmP4" target="_blank">
+                        <img src="../static/img/icon/QQ.png" class="app-paragraph-content-table-div-icon-img"
+                            height="40" winth="40" style="height:40px">
+                    </a>
+                </div>
+                <div class="app-footer-p copyright">
+                    <a>©️ Code Dream Star 2023</a>
+                </div>
+            </div>
+            <div class="app-footer-spacer"></div>
+        </footer>
+    </div>
+    <script src="../static/js/jq.js"></script>
+    <script src="../static/js/NavigatorTools.js"></script>
+    <script src="../static/js/index_old.js"></script>
+</body>
+
+</html>
