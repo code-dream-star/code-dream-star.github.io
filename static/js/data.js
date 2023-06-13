@@ -1,23 +1,26 @@
 $about_development_history_data = [
     { date: "2022.07.29", data: ["团队成立", "创建 Code Dream Star"] },
     { date: "2022.10", data: ["Code Blockly 项目开始"] },
-    { date: "2022.11", data: ["Code Dream Star 被更多人熟知", "Code Blockly 上线，目前仅支持 Web 端", "Code Dream Star 官网上线"] },
+    { date: "2022.11", data: ["Code Dream Star 被更多人熟知", "Code Blockly 上线，目前仅支持 Web 编辑器", "Code Dream Star 官网上线"] },
     { date: "2023.02", data: ["Code Dream Star 主页改版", "Code Blockly 主页改版"] },
+    { date: "2023.05", data: ["Code Blockly 更新 Python 编辑器"] },
     { date: "2024", data: ["未来可期..."] },
 ]
 
+
 $boardsdata = [
-    { img: "./static/img/boards/Code-Dream-Star-Line.png", url: "?" },
-    { img: "./static/img/boards/Code-Dream-Star.png", url: "?" },
-    { img: "./static/img/boards/Code-Blockly.png", url: "/code-blockly" },
+    { img: `Code-Dream-Star-slogan.png`, url: "?" },
+    { img: `Code-Dream-Star-Line.png`, url: "?" },
+    { img: `Code-Dream-Star.png`, url: "?" },
+    { img: `Code-Blockly.png`, url: "/code-blockly" },
 ];
 
 USERCONFIG = {
     "1086-loves-programming": {
         img: "q",
         name: "1086爱编程",
-        v: ["核心开发员", "UI设计"],
-        d: "梦想就像星辰，你能看得到，但是你摸不到",
+        v: ["开发员", "UI设计"],
+        d: "Stars will shine the world.",
         qq: "531854969",
         email: "quiet_star_gazing@outlook.com",
     },

@@ -172,7 +172,7 @@
     if (typeof window.$boardsdata != [][0] + []) {
         if (Array.isArray(window.$boardsdata)) {
             window.$boardsdata.forEach((e) => {
-                $(`<div class="app-boards-root-img"><img src="${e.img}" url="${e.url}"></div>`).appendTo($(".app-boards-root")[0])
+                $(`<div class="app-boards-root-img"><img src="./static/img/boards/${e.img}" url="${e.url}"></div>`).appendTo($(".app-boards-root")[0])
                 $(`<div class="app-boards-bottom-buttons-div"></div>`).appendTo($(".app-boards-bottom-buttons")[0])
             });
         }
