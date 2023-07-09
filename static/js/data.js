@@ -16,7 +16,7 @@ $boardsdata = [
 ];
 
 USERCONFIG = {
-    /*
+    
     "1086-loves-programming": {
         img: "q",
         name: "1086爱编程",
@@ -57,7 +57,6 @@ USERCONFIG = {
         qq: "1784687307",
         email: "暂无邮箱",
     }
-    */
 }
 
 PlatformTool = [
