@@ -1,5 +1,5 @@
 !function () {
-    window.BoardsStop = true
+    window.BoardsStop = false
     !(function () {
         const date = new Date();
         const list = [
