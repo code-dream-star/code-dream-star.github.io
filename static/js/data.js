@@ -9,10 +9,11 @@ $about_development_history_data = [
 
 
 $boardsdata = [
-    { img: `Code-Dream-Star-slogan.png`, url: "?" },
-    { img: `Code-Dream-Star-Line.png`, url: "?" },
-    { img: `Code-Dream-Star.png`, url: "?" },
-    { img: `Code-Blockly.png`, url: "/code-blockly" },
+    { img: `Red.png`, url: "?" },
+    // { img: `Code-Dream-Star-slogan.png`, url: "?" },
+    // { img: `Code-Dream-Star-Line.png`, url: "?" },
+    // { img: `Code-Dream-Star.png`, url: "?" },
+    // { img: `Code-Blockly.png`, url: "/code-blockly" },
 ];
 
 USERCONFIG = {

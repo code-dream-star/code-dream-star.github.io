@@ -70,8 +70,9 @@ li {
 /* ———————— root ———————— */
 :root {
     --app-bg-color: rgb(246, 246, 246);
-    --app-theme-color: #0af;
-    --app-theme-color2: #0070f3;
+    /*0af 0070f3*/
+    --app-theme-color: rgb(255, 0, 0);
+    --app-theme-color2: #f30000;
     --header-url-select-color: var(--app-theme-color2);
     --header-bg-color: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
     --header-text-color: #fff;
@@ -494,8 +495,12 @@ img.app-paragraph-content-table-div-icon-img {
     -moz-transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    /*
+        box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     -webkit-box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    */
+    box-shadow: 0 4px 14px 0 rgba(255, 0, 0, 0.39);
+    -webkit-box-shadow: 0 4px 14px 0 rgba(255, 0, 0, 0.39);
 }
 
 .app-blue-button span {
