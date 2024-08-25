@@ -107,8 +107,13 @@ section>h1 {
     width: 100%;
 }
 
-.poster {
+.posters {
+    width: 100%;
     position: relative;
+}
+
+.poster {
+    position: absolute;
     display: block;
     width: fit-content;
     height: fit-content;
